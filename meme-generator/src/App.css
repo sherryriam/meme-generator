@@ -44,7 +44,7 @@ main {
   cursor: pointer;
 }
 .meme-image {
-  max-width: 200%;
+  max-width: 100%;
   margin: auto;
 }
 .condition {
@@ -76,4 +76,42 @@ main {
   display: inline-block;
   border: 2px solid rgb(73, 94, 31);
   border-radius: 5%;
+}
+.image-text-container {
+  position: relative;
+}
+
+.meme-text {
+  position: absolute;
+  background: rgba(221, 221, 11, 0.3);
+  width: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.top {
+  top: 2%;
+  word-wrap: break-word;
+}
+.bottom {
+  bottom: 6%;
+  word-wrap: break-word;
 }
